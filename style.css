@@ -9,7 +9,7 @@ body {
     justify-content: center;
     align-items: center;
 
-    font-family: Arial, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, Arial, sans-serif;
     background: #111;
     color: white;
 
@@ -38,23 +38,28 @@ button {
     font-weight: bold;
 
     cursor: pointer;
+    transition: transform 0.1s;
 }
 
-#callButton {
-    background: red;
+button:active {
+    transform: scale(0.96);
+}
+
+#callBtn {
+    background: #e63946;
     color: white;
 }
 
-#clearButton {
+#clearBtn {
     background: white;
     color: black;
     font-size: 20px;
 }
 
-.calling {
-    background: red;
+.container.call-active {
+    background-color: #ff2a2a;
 }
 
-.calling #callButton {
+.hidden {
     display: none;
 }
